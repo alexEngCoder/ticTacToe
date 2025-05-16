@@ -315,7 +315,8 @@ void chooseMenu(char*topic, byte* payload, unsigned int length) {
           lcd.setCursor(0, 1);  // Column 0, Row 1
           lcd.print("P2: ");
           lcd.print(player2);
-
+        }
+    }
   }
   
   else if((topicStr == "esp32/aiVsPlayer" || topicStr == "esp32/aiRound") && isPlaying && !isPlaying2)
